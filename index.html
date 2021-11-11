@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="src/index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+ 
+      <div class="search-button">
+        <button type="button" class="btn btn-primary">Search</button>
+      </div>
+        <div class="location-button">
+        <button type="button" class="btn btn-primary">Current Location</button>
+      </div>
+      <form class="search-form" id="search-form">
+      <div class="input-location">
+      <div class="row">
+  <div class="col-4">
+    <input type="search-form" id="location-input" class="form-control" placeholder="Enter location" aria-label="Enter location">
+  </div>
+  </div>
+</form>
+      <h1 id="location">London</h1>
+
+      <h2 id="temp">18</h2>
+      <a href="#" id="c-conversion">°C |</a>
+      <a href="#" id="f-conversion">°F</a>
+      <img src="images/Cloud.jpg" class="weather-now" alt="" width="250" />
+      <h3 id="additional">Cloudy</h3>
+      <h4 id="date">Friday 8th Oct <br />
+        Cloudy
+      </h4>
+      <br />
+      <p class="condition" >
+        Feels Like: <span id="feels-like"></span>
+        <br />
+        Humidity: <span id="humidity"></span>
+        <br />
+        Wind: <span id="wind-speed"></span>
+      </p>
+<div class="weather-days">
+       <div class="row row-cols-5">
+  <div class="col">
+    <div class="card h-100">
+     <h5 class="card-title">Sat 9th</h5> 
+     <img src="images/Emoji_Sun_Behind_Cloud.jpg" class="card-img-top" alt="sun cloud">
+      <div class="card-body">
+        
+        <p class="card-text">18° </p> <p class="lows">  10°</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+     <h5 class="card-title">Sun 10th</h5> 
+     <img src="images/Cloud.jpg" class="card-img-top" alt="cloudy">
+      <div class="card-body">
+        
+        <p class="card-text">18° </p> <p class="lows">  8°</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+     <h5 class="card-title">Mon 11th</h5> 
+     <img src="images/cloud-with-rain.jpg" class="card-img-top" alt="rainy cloud">
+      <div class="card-body">
+        
+        <p class="card-text">16° </p> <p class="lows"> 10°</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <h5 class="card-title">Tues 12th</h5>
+      <img src="images/Cloud.jpg" class="card-img-top" alt="cloudy">
+      <div class="card-body">
+        
+        <p class="card-text">14° </p> <p class="lows"> 7°</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+     <h5 class="card-title">Weds 13th</h5> 
+     <img src="images/Emoji_Sun_Behind_Cloud.jpg" class="card-img-top" alt="sun cloud">
+      <div class="card-body">
+        
+        <p class="card-text">15° </p> <p class="lows"> 8°</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+    </div>
+  </body>
+</html>
