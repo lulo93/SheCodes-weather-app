@@ -17,7 +17,7 @@ function formatDate(date) {
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday",
+    "Saturday"
   ];
   let months = [
     "January",
@@ -31,7 +31,7 @@ function formatDate(date) {
     "September",
     "October",
     "November",
-    " December",
+    " December"
   ];
 
   let day = days[weekDays];
